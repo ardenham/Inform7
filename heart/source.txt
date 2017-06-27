@@ -1,4 +1,6 @@
-"HeartExperiment v3" by Andre Denham
+"Heart Experiment" by Andre Denham
+
+Part 1 - Preamble
 
 The story headline is "An Interactive Simulation". 
 
@@ -54,7 +56,7 @@ Release along with an introductory postcard.
 
 Release along with the introductory booklet.
 
-Part - Scoring
+Part 2 - Scoring
 
 Use scoring. 
 
@@ -89,7 +91,7 @@ This is the enhanced notify score changes rule:
 
 The enhanced notify score changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.
 		
-Part - Nautical Directions
+Part 3 - Nautical Directions
 
 A room can be nautical or earthbound. A room is usually not nautical. A direction can be nautical or earthbound. A direction is usually not nautical. Starboard, port, fore, aft, up, down, the inside and the outside are nautical.
 Before going a nautical direction when the location is not nautical, say "Nautical directions can only be used on board the ISS."
@@ -102,7 +104,7 @@ Aft is a direction. The aft has opposite fore. Understand "a" as aft when the lo
 Does the player mean going a nautical direction when the location is nautical: it is very likely.
 Index map with fore mapped as north. Index map with aft mapped as south. Index map with port mapped as west. Index map with starboard mapped as east.
 
-Part - Mechanics
+Part 4 - Mechanics
 
 Chapter - Stay in Destiny
 
@@ -138,13 +140,13 @@ When play begins:
 Chapter - Ending the Story
 
 
-Part - Setting
+Part 5 - Setting
 
 Chapter - US Module
 
 The US Module is a region. Destiny Module, Unity Module, Quest Airlock, and Harmony Node are in the US Module.
 
-Section - Destiny Lab
+Section 1 - Destiny Lab
 
 The Destiny Module is a nautical room. The description of the Destiny Module is "The doors to the Destiny Module close behind you as you enter. You quickly locate the EXPRESS Rack and with a slight push, you drift over over to begin today's tasks"
 
@@ -164,7 +166,7 @@ Nitrile Gloves are a wearable thing.
 After taking nitrile gloves when the nitrile gloves are not handled:
 	increase score by 5. 
 	
-Section - EXPRESS Rack
+Section 2 - EXPRESS Rack
 
 The Express Rack is scenery in the Destiny Module. The description of EXPRESS Rack is "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL). "
 
@@ -206,41 +208,41 @@ Instead of Covering Microscope:
 	say "You cover the microscope with the dust cover to provide a barrier if leakage occurs while unattended.";
 	increase score by 2. 
 
-Section - Harmony Node
+Section 3 - Harmony Node
 
 There is a nautical room called Harmony Node. Harmony Node is aft of Destiny Lab. 
 
-Section - Unity Module
+Section 4 - Unity Module
 
 There is a nautical room called Unity Module. Unity Module is fore of Destiny Lab. 
 
-Section - Quest Airlock
+Section 5 - Quest Airlock
 
 There is a nautical room called Quest Airlock. Quest Airlock is starboard of Unity Module. 
 
-Section - Columbus Laboratory
+Section 6 - Columbus Laboratory
 
 There is a nautical room called Columbus Laboratory. Columbus Laboratory is starboard of Harmony Node.
 
-Chapter - Japanese Module
+Chapter 2 - Japanese Module
 
 The Japanese Module is a region. Kibo Research Module and Kibo Outer Research Platform are in the Japanese Module. 
 
-Section - Kibo Research Module
+Section 1 - Kibo Research Module
 
 There is a nautical room called Kibo Research Module. Kibo Research Module is port of Harmony Node.
 
-Section - Kibo Outer Research Platform
+Section 2 - Kibo Outer Research Platform
 
 There is a nautical room called Kibo Outer Research Platform. Kibo Outer Research Platform is port of Kibo Research Module.
 
-Chapter - European Module
+Chapter 3 - European Module
 
 The European Module is a region. Columbus Laboratory is in the European Module. 
 
-Part - Characters
+Part 6 - Characters
 
-Chapter - Robonaut
+Chapter 1 - Robonaut
 
 RoboNaut is a man in the Destiny Module. "RoboNaut stands attentive to your needs. Feel free to ask Robonaut for guidance at any time by saying 'Hey Robonaut'." The description of RoboNaut is "RoboNaut has four arms, treads, and a shiny metal body." Understand "robot" and "assistance" and "assist" as RoboNaut.
 
@@ -326,7 +328,7 @@ After quizzing Robonaut about the Heart Experiment Guide:
 	
 Instead of giving something to someone, try showing the noun to the second noun. 
 
-Chapter - POIC
+Chapter 2 - POIC
 
 POIC is a person in the Destiny Lab.   The description is "POIC or Payload Operations Integration Center are responsible for x, y, z. POIC is your point of contact when running experiments like this."  
 
@@ -351,9 +353,9 @@ Check notifying POIC rule:
 Report notifying POIC the first time:
 	 say " 'POIC this is an update on the Heart Experiment procedure that I just started.' you say.[paragraph break]'Go ahead' POIC replies[paragraph break][line break]'I have just removed the BioCell Habitat from the SABL' you say. [paragraph break][line break]'Sounds good. You must let the heart cells cool down for approximately 20 minutes before the subsequent Microscope imaging ops can begin' POIC tells you over the intercom.[paragraph break][line break]'I understand. I'm going to have Robonaut set a timer now' you reply."; increase score by 5;
 		
-Part - Experiment Phases
+Part 7 - Experiment Phases
 
-Chapter - Phase One
+Chapter 1 - Phase One
 
 Phase One is a scene.  Phase One begins when play begins. 
 
@@ -430,7 +432,7 @@ After asking robonaut about Heart Experiment Guide for the third time:
 	
 Phase One ends when notifying POIC. 
 
-Chapter - Phase Two
+Chapter 2 - Phase Two
 
 Phase Two is a scene. Phase Two begins when Phase One ends. 
 
@@ -522,7 +524,7 @@ Every turn when checking Multiwell Habitat for leakage:
 
 Phase Two ends when insert multiwell biocell onto stage. 
 
-Chapter - Phase Three
+Chapter 3 - Phase Three
 
 Phase Three is a scene. Phase Three begins when Phase Two ends. 
 
@@ -536,7 +538,7 @@ Lower microscope shield is an action applying to nothing. Understand "Lower micr
 Instead of lower microscope shield:
 	say "Microscope shield lowered."; increase score by 5. 
 
-Chapter - Phase Four
+Chapter 4 - Phase Four
 
 Phase Four is a scene. Phase four begins when Phase Three ends. 
 	

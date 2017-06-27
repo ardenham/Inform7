@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <title>Andre Denham - HeartExperiment v3 — 3 of 5</title>
+  <title>Andre Denham - Heart Experiment — 3 of 6</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="author" content="Andre Denham" />
-  <meta name="description" content="A page for the game HeartExperiment v3 by Andre Denham." />
+  <meta name="description" content="A page for the game Heart Experiment by Andre Denham." />
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
  </head>
 
@@ -18,7 +18,7 @@
 
 <div class ="sourceintroduction">
 	<h1>
-		<span>HeartExperiment v3</span> <span class="pagination">— 3 of 5</span>
+		<span>Heart Experiment</span> <span class="pagination">— 3 of 6</span>
 	</h1>
 	<h2>
 		<span>Andre Denham</span>
@@ -35,7 +35,7 @@
 </div>
 
 <div class = "source">
-<p class="indent0"><span class="heading">Part - Nautical Directions</span></p><p class="indent0">A room can be nautical or earthbound. A room is usually not nautical. A direction can be nautical or earthbound. A direction is usually not nautical. Starboard, port, fore, aft, up, down, the inside and the outside are nautical.</p><p class="indent0">Before going a nautical direction when the location is not nautical, say &quot;<span class="quote">Nautical directions can only be used on board the ISS.</span>&quot;</p><p class="indent0">Before going an earthbound direction when the location is nautical, say &quot;<span class="quote">Compass directions make no sense on board the ISS, but you can use [</span><span class="substitution">list of nautical directions</span><span class="quote">] instead.</span>&quot; instead.</p><p class="indent0"> </p><p class="indent0">Starboard is a direction. The starboard has opposite port. Understand &quot;<span class="quote">s</span>&quot; as starboard when the location is nautical.</p><p class="indent0">Port is a direction. The port has opposite starboard. Understand &quot;<span class="quote">p</span>&quot; as port when the location is nautical.</p><p class="indent0">Fore is a direction. The fore has opposite aft. Understand &quot;<span class="quote">f</span>&quot; as fore when the location is nautical.</p><p class="indent0">Aft is a direction. The aft has opposite fore. Understand &quot;<span class="quote">a</span>&quot; as aft when the location is nautical.</p><p class="indent0">Does the player mean going a nautical direction when the location is nautical: it is very likely.</p><p class="indent0">Index map with fore mapped as north. Index map with aft mapped as south. Index map with port mapped as west. Index map with starboard mapped as east.</p>
+<p class="indent0"><span class="heading">Part 2 - Scoring</span></p><p class="indent0">Use scoring. </p><p class="indent0">When play begins:</p><p class="indent1">now score is 0;</p><p class="indent1">if Vorple is supported:</p><p class="indent2">open HTML tag &quot;<span class="quote">div</span>&quot; called &quot;<span class="quote">score</span>&quot;;</p><p class="indent2">place a level 3 header reading &quot;<span class="quote">Score: [</span><span class="substitution">score</span><span class="quote">]</span>&quot;;</p><p class="indent2">close HTML tag;</p><p class="indent1">if Vorple is not supported:</p><p class="indent2">now the left hand status line is &quot;<span class="quote">Score: [</span><span class="substitution">score</span><span class="quote">]</span>&quot;; </p><p class="indent0">The maximum score is 74.</p><p class="indent0">Check switching score notification off: </p><p class="indent1">if the turn count is less than 10: </p><p class="indent2">say &quot;<span class="quote">You are still a novice, grasshopper. Allow your teacher to give you advice until such time as you are ready to go on alone.</span>&quot; </p><p class="indent2"></p><p class="indent0">To say score notification message:</p><p class="indent1">(-<span class="i6code"> NotifyTheScore(score); </span>-).</p><p class="indent0">This is the enhanced notify score changes rule:</p><p class="indent1">if Vorple is supported:</p><p class="indent2">If the last notified score is not the score:</p><p class="indent3">display a notification reading &quot;<span class="quote">[</span><span class="substitution">score notification message</span><span class="quote">]</span>&quot;;</p><p class="indent3">now the last notified score is the score;</p><p class="indent3">open HTML tag &quot;<span class="quote">div</span>&quot; called &quot;<span class="quote">score</span>&quot;;</p><p class="indent3">place a level 3 header reading &quot;<span class="quote">Score: [</span><span class="substitution">score</span><span class="quote">]</span>&quot;;</p><p class="indent3">close HTML tag;</p><p class="indent1">otherwise:</p><p class="indent2">follow the notify score changes rule.</p><p class="indent0">The enhanced notify score changes rule is listed instead of the notify score changes rule in the turn sequence rulebook.</p><p class="indent2"></p>
 </div>
 
 <div class ="notes">
