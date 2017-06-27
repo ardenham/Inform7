@@ -1,0 +1,398 @@
+"HeartExperiment v3" by Andre Denham
+
+The story headline is "An Interactive Simulation". 
+
+Include Questions by Michael Callaghan
+
+Include Conversation Framework by Eric Eve. 
+
+Include Epistemology by Eric Eve. 
+
+Include Variable Time Control by Eric Eve. 
+
+Release along with source text.
+
+Release along with an interpreter.
+
+Use scoring. 
+
+
+Part - Nautical Directions
+
+A room can be nautical or earthbound. A room is usually not nautical. A direction can be nautical or earthbound. A direction is usually not nautical. Starboard, port, fore, aft, up, down, the inside and the outside are nautical.
+Before going a nautical direction when the location is not nautical, say "Nautical directions can only be used on board the ISS."
+Before going an earthbound direction when the location is nautical, say "Compass directions make no sense on board the ISS, but you can use [list of nautical directions] instead." instead.
+ 
+Starboard is a direction. The starboard has opposite port. Understand "s" as starboard when the location is nautical.
+Port is a direction. The port has opposite starboard. Understand "p" as port when the location is nautical.
+Fore is a direction. The fore has opposite aft. Understand "f" as fore when the location is nautical.
+Aft is a direction. The aft has opposite fore. Understand "a" as aft when the location is nautical.
+Does the player mean going a nautical direction when the location is nautical: it is very likely.
+Index map with fore mapped as north. Index map with aft mapped as south. Index map with port mapped as west. Index map with starboard mapped as east.
+
+
+Part - Mechanics
+
+Chapter - Stay in Destiny
+
+Instead of going starboard, say "The rest of the ISS is locked down until after the ship makes its jump to hyperspace."
+
+Instead of going fore, say "The rest of the ISS is locked down until after the ship makes its jump to hyperspace."
+
+Instead of going aft, say "The rest of the ISS is locked down until after the ship makes its jump to hyperspace."
+
+Instead of going port, say "The rest of the ISS is locked down until after the ship makes its jump to hyperspace."
+
+Reading research overview is an action applying to nothing. Understand "Read research overview" as Reading research overview.
+
+Reading heart experiment guide is an action applying to nothing. Understand "Read heart experiment guide" as Reading heart experiment guide.
+
+Chapter - Beginning the Story
+
+When play begins: say “You are about to enter the Destiny Module which is a laboratory aboard the International Space Station (ISS). Numerous racks and stowage compartments contain scientific experiments and equipment. [line break]"  
+
+The player is in the Destiny Module. 
+
+When play begins: 
+	 now the right hand status line is " [turn count]/[sec-time]";
+	 now seconds_per_turn is 300
+	
+Chapter - Ending the Story
+
+
+Part - Setting
+
+Chapter - US Module
+
+The US Module is a region. Destiny Module, Unity Module, Quest Airlock, and Harmony Node are in the US Module.
+
+Section - Destiny Lab
+
+The Destiny Module is a nautical room. The description of the Destiny Module is "The doors to the Destiny Module close behind you as you enter. You quickly locate the EXPRESS Rack and with a slight push, you drift over over to begin today's tasks"
+
+The workbench is a supporter in the Destiny Module. On top of the workbench is the lab manual and nitrile gloves. 
+
+The Lab Manual is a closed, fixed in place, openable container. It contains the Research Overview and and the Heart Experiment Guide. 
+
+The Research Overview is a portable thing. The Research Overview can be read or unread. The Research Overview is unread. Understand "overview" as Research Overview. 
+
+The Heart Experiment Guide is a portable thing. The Heart Experiment Guide can be read or unread. The Heart Experiment Guide is unread. Understand "experiment guide/guide" as heart experiment guide. 
+
+Nitrile Gloves are a wearable thing.
+	
+Section - EXPRESS Rack
+
+The Express Rack is scenery in the Destiny Module. The description of EXPRESS Rack is "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL). "
+
+The SABL is a locked, closed, openable container that is part of the Express Rack. The description of the SABL is "[if closed] You can open the SABL. [otherwise] You can see several tray compartments which have are closed. One of the compartments is labelled Biocell Habitat inside the SABL."  
+ 
+A Biocell Habitat is a closed openable container in the SABL.  
+
+Before examining the Biocell Habitat:
+	say "A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.";
+ 
+The MicroStowage is a closed openable container that is scenery within the Destiny Module. "[if open] Within the MicroStowage you see a Microscope, a clear Glove Bag, a CleanUp Kit, and a Dust Cover. [otherwise] You see a storage compartment designated as MicroStowage."
+ 
+The Glove Bag is a thing. The Glove Bag is in the MicroStowage. It is  an openable, transparent container. It is closed.  The description of the Glove Bag is "This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag. [if closed] Currently, the Glove Bag is closed. [otherwise] Inside the Glove Bag you see.". 
+
+CleanUp Kit is a thing. The CleanUp Kit is in the MicroStowage. The description is "The CleanUp Kit is used in case of a leakage".  
+
+Understand "clean up/clean up kit" as the CleanUp Kit. 
+
+After putting the CleanUp Kit on the workbench the second time:
+	say "You inform the POIC of your progress. They let you know what you are now ready to move on to the Multiwell Biocell Insertion onto Microscope Stage. GOOD JOB! ". 
+
+Dust Cover is a thing. The Dust Cover is in the MicroStowage. 
+
+Before examining the Dust Cover:
+	say "This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattended".
+	
+Multiwell BioCell is a thing. The Multiwell BioCell is inside the Biocell Habitat.       
+
+Microscope is a thing. The Microscope is inside MicroStowage. It is an openable container. It is open. The description is "The Microscope Stage is on the microscope, which is located in the microscope stowage. Opening the stowage reveals the microscope. When inserting the Multiwell BioCell onto Stage, make sure the with the ports are facing upward, and insert the Muitiwell BioCell by angling the back edge of the Multiwell BioCell into the Stage first and then pressing down on the front edge to snap into place. It may be necessary to raise the Shield."
+
+Covering Microscope is an action applying to nothing. Understand "Cover Microscope" and "place dust cover over microscope" as Covering Microscope.
+
+Instead of Covering Microscope:
+	say "You cover the microscope with the dust cover to provide a barrier if leakage occurs while unattended.";
+
+Section - Harmony Node
+
+There is a nautical room called Harmony Node. Harmony Node is aft of Destiny Lab. 
+
+Section - Unity Module
+
+There is a nautical room called Unity Module. Unity Module is fore of Destiny Lab. 
+
+Section - Quest Airlock
+
+There is a nautical room called Quest Airlock. Quest Airlock is starboard of Unity Module. 
+
+Section - Columbus Laboratory
+
+There is a nautical room called Columbus Laboratory. Columbus Laboratory is starboard of Harmony Node.
+
+Chapter - Japanese Module
+
+The Japanese Module is a region. Kibo Research Module and Kibo Outer Research Platform are in the Japanese Module. 
+
+Section - Kibo Research Module
+
+There is a nautical room called Kibo Research Module. Kibo Research Module is port of Harmony Node.
+
+Section - Kibo Outer Research Platform
+
+There is a nautical room called Kibo Outer Research Platform. Kibo Outer Research Platform is port of Kibo Research Module.
+
+Chapter - European Module
+
+The European Module is a region. Columbus Laboratory is in the European Module. 
+
+Part - Characters
+
+Chapter - Robonaut
+
+RoboNaut is a man in the Destiny Module. "RoboNaut stands attentive to your needs. Feel free to ask Robonaut for guidance at any time by saying 'Hey Robonaut'." The description of RoboNaut is "RoboNaut has four arms, treads, and a shiny metal body." Understand "robot" and "assistance" and "assist" as RoboNaut.
+
+Every turn:
+	 if RoboNaut is not visible begin;
+		 move RoboNaut to the location of the player;
+		 say "RoboNaut rattles into the room, following you.";
+	 end if.  
+
+Heying Robonaut is an action applying to nothing. Understand "Hey Robonaut" as Heying Robonaut.
+
+Instead of Heying Robonaut:
+	 say "Robonaut says: How may I be of assistance?"
+
+After saying hello to Robonaut when the greeting type is explicit:
+	say "'Hi, there, My name is Robonaut and I am here to help you to the best of my ability. Is there anything I can help you with?";
+	
+After saying hello to Robonaut when the greeting type is implicit:
+	say "'I am at your beck and call. Ask away. "
+
+Asking Robonaut about something is Robonaut-chatting.
+Telling Robonaut about something is Robonau-chatting.
+
+After quizzing Robonaut about Robonaut the first time:
+	 say "'How are you, Robonaut?' you ask.[paragraph break]'I'm fantastically well, I am certainly not fine by far, but you could say I'm close to spectacular."
+	
+After quizzing Robonaut about the Express Rack:
+	 say "'Tell me all you know about the EXPRESS Rack' you ask.[paragraph break]'The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL).' Robonaut replies."
+	
+After quizzing Robonaut about the Lab Manual:
+	 say "'Tell me about the lab manual' you ask.[paragraph break]'The Lab Manual is your best friend today. Within the manual I have placed the Research Overview and and the Heart Experiment Guide.' Robonaut replies."
+
+After quizzing Robonaut about the SABL:
+	 say "'Tell me about the SABL please' you ask.[paragraph break]'The SABL or Space Automated Bioproduct Lab is a part of the Express Rack.' Robonaut replies."
+	
+After quizzing Robonaut about the Biocell Habitat:
+	 say "'Tell me about the Biocell' you ask.[paragraph break]'A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.' Robonaut replies."
+	
+After quizzing Robonaut about the MicroStowage:
+	 say "'Robonaut what is in the MicroStowage' you ask.[paragraph break]'The MicroStowage contains the various apparatus that you will need to complete today's task.' Robonaut replies."
+
+After quizzing Robonaut about the Glove Bag:
+	 say "'Robonaut tell me about the Glove Bag.' you ask.[paragraph break]'This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag.' Robonaut replies."
+	
+After quizzing Robonaut about the CleanUp Kit:
+	 say "'Robonaut tell me what I need to know about the CleanUp Kit.' you ask.[paragraph break]'The CleanUp Kit is used in cae of a leakage during the experiment.' Robonaut replies."
+	
+After quizzing Robonaut about the Dust Cover:
+	 say "'Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattende.' Robonaut replies."
+	
+After quizzing Robonaut about the Heart Experiment Guide:
+	 say "'Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattende.' Robonaut replies."
+	
+Instead of giving something to someone, try showing the noun to the second noun. 
+
+Chapter - POIC
+
+POIC is a person in the Destiny Lab.   The description is "POIC or Payload Operations Integration Center are responsible for x, y, z. POIC is your point of contact when running experiments like this."  
+
+Understand "ask [someone] about [something]" as interrogating it about. Interrogating it about is an action applying to two visible things.
+
+Instead of interrogating POIC about the Biocell Habitat, say "'I might like that Biocell Habitat.'"
+
+Notifying POIC is an action applying to nothing. Understand "notify POIC" as notifying POIC.
+
+Check notifying POIC rule:
+	if the BioCell Habitat is not carried:
+		end the story saying "'Thanks for checking in, but it seems that you've skipped quite a few steps in this procedure. It's very important that you complete the procedure in the correct sequence. This shows us that you might not be the right person for this task. You've failed the mission and let us all down. SHAME!" instead;
+	if the SABL is open:
+		end the story saying "Because you forgot to close the SABL BEFORE contacting POIC, you unwittingly allow for particles to contaminate the remaining heart cells, ruining all the hard work done to set up this experiment. You had access to the step-by-step guide for this experiment and you still messed it up. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!" instead
+		
+Report notifying POIC:
+	 say " 'POIC this is an update on the Heart Experiment procedure that I just started.' you say.[paragraph break]'Go ahead' POIC replies[paragraph break][line break]'I have just removed the BioCell Habitat from the SABL' you say. [paragraph break][line break]'Sounds good. You must let the heart cells cool down for approximately 20 minutes before the subsequent Microscope imaging ops can begin' POIC tells you over the intercom.[paragraph break][line break]'I understand. I'm going to have Robonaut set a timer now' you reply.";
+	
+Part - Experiment Phases
+
+Chapter - Phase One
+
+Phase One is a scene.  Phase One begins when play begins. 
+
+Unlocking the SABL is an action applying to nothing. Understand "unlock SABL" as unlocking the SABL.
+
+Instead of unlocking the SABL:
+	say "using the code '200916' you unlock the SABL.";
+	now the SABL is unlocked.
+
+Instead of opening Lab Manual:
+	say "Opening the lab manual reveals two documents: The Research Overview and the Heart Experiment Guide."
+
+Instead of opening SABL for the first time:
+	say "Robonaut activiates and says 'I'm not sure you're ready to open the SABL just yet. Have you briefed yourself on the lab procedures?' [line break]'If the answer is yes, then try opening the SABL again. If not then please go back to the lab manual and read'";
+	
+Instead of reading Research Overview: 
+	say  "Heart Experiment Research Overview
+
+•The goals of the Effects of Microgravity on Stem Cell-Derived Heart Cells (Heart Cells) investigation involve increasing the understanding of the effects of microgravity on heart function, the improvement of heart disease modeling capabilities, and the development of appropriate methods for cell therapy for people with heart disease on Earth. 
+
+•It is hoped that this investigation provides knowledge that may impact disease modeling, drug discovery, and Heart cell therapy.
+
+Description
+
+With extended stays aboard the International Space Station (ISS) becoming commonplace and as NASA prepares for exploration class space missions beyond low earth orbit, the need to better understand and mitigate the negative effects of spaceflight on various bodily and cellular functions is becoming increasingly important. Specifically, there is great interest in the effects of microgravity on the human heart, with a particular emphasis on understanding the microgravity effects on cardiomyocyte physiology and gene expression. The goal of the Effects of Microgravity on Stem Cell-Derived Cardiomyocytes for Human Cardiovascular Disease Modeling and Drug Discovery (Heart Cells) investigation is to look further into the effects.
+ 
+Primary human heart tissues, which would be useful for in vitro microgravity studies on heart function, are very difficult to obtain and maintain in culture. Likewise, the characteristics of animal cells are sufficiently different from their human counterparts that their use is limited. Instead, this investigation aims to use heart cells derived from human induced pluripotent stem cells (hiPSCs), which have emerged as a novel tool for drug discovery and cell therapy in cardiovascular medicine, to study the effects of microgravity on cardiac function and gene expression.";
+	now the Research Overview is read. 
+
+Instead of reading Heart Experiment Guide: 
+	say  "Heart Experiment Guide
+
+1) Examine the EXPRESS Rack[line break]2) Unlock and Open SABL Door (The Code is 200916)[line break]3) Take Biocell Habitat[line break]4) Close SABL Door[line break]5) Notify POIC that BioCell was removed[line break]6) Open MicrosStowage[line break]7) Take Glove Bag, CleanUp Kit, Dust Cover[line break]8) Put all three items on workbench[line break]9) Open Glove Bag and put Biocell Habitat and CleanUp Kit[line break]10) Close Glove Bag[line break]11) Insert Hands into glove slots[line break]12) Verify no leakage[line break]13) Open BioCell Habitat, remove Multiwell BioCell, and close BioCell Habitat[line break]14)Verify no leakage of Mutiwell BioCell[line break]15) Remove hands from Glove bag[line break]16) Put on Nitrile Gloves[line break]17)Remove all items from Glove Bag[line break]18)Insert Multiwell onto Stage[line break]19)Lower shield over Multiwell BioCell[line break]20)Place dust cover over Microscope[line break]21)Stage Clean Up Kit near microscope[line break]22)Fold up Glove Bag[line break]22)Put Glove Bag back in MicroStowage[line break]23)Take off Nitrile Gloves";
+	now the Heart Experiment Guide is read. 
+
+Check reading Heart Experiment Guide:
+	if lab manual is closed:	
+		say "You can't read what you can't see."
+		
+Check opening SABL:
+	if Heart Experiment Guide is unread:
+		end the story saying "How can you run an experiment and you haven't read the experiment guide? You have no idea what you're doing and you went ahead anyways. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!" instead
+		
+Telling robonaut to set timer for 20 minutes is an action applying to nothing. Understand "tell robonaut to set timer for 20 minutes" as telling robonaut to set timer for 20 minutes.
+
+Instead of telling robonaut to set timer for 20 minutes:
+	 say "'Robonaut set timer for 20 minutes' you say [paragraph break]'Timer set for 20 minutes 'Robonaut responds'."	;	
+	
+Asking robonaut about Heart Experiment Guide is an action applying to nothing. Understand "ask robonaut about Heart Experiment Guide" as asking robonaut about Heart Experiment Guide.
+
+Instead of asking robonaut about Heart Experiment Guide for the first time:
+	 say "'Here are the steps for today's heart experiment: 
+[line break][line break]1) Examine the EXPRESS Rack[line break]2) Unlock and Open SABL Door (The Code is 200916)[line break]3) Take Biocell Habitat[line break]4) Close SABL Door[line break]5) Notify POIC that BioCell was removed[line break]6) Open MicrosStowage[line break]7) Take Glove Bag, CleanUp Kit, Dust Cover[line break]8) Put all three items on workbench[line break]9) Open Glove Bag and put Biocell Habitat and CleanUp Kit[line break]10) Close Glove Bag[line break]11) Insert Hands into glove slots[line break]12) Verify no leakage[line break]13) Open BioCell Habitat, remove Multiwell BioCell, and close BioCell Habitat[line break]14)Verify no leakage of Mutiwell BioCell[line break]15) Remove hands from Glove bag[line break]16) Put on Nitrile Gloves[line break]17)Remove all items from Glove Bag[line break]18)Insert Multiwell onto Stage[line break]19)Lower shield over Multiwell BioCell[line break]20)Place dust cover over Microscope[line break]21)Stage Clean Up Kit near microscope[line break]22)Fold up Glove Bag[line break]22)Put Glove Bag back in MicroStowage[line break]23)Take off Nitrile Gloves"
+
+Instead of asking robonaut about Heart Experiment Guide for second time:
+	 say "'Here are the steps for today's heart experiment: 
+[line break][line break]1) Examine the EXPRESS Rack[line break]2) Unlock and Open SABL Door (The Code is 200916)[line break]3) Remove Biocell Habitat[line break]4) Close SABL Door[line break]5) Notify POIC that BioCell was removed[line break]6) Open MicrosStowage[line break]7) Remove Glove Bag, CleanUp Kit, Dust Cover[line break]8) Put all three items on workbench[line break]9) Open Glove Bag and put Biocell Habitat and CleanUp Kit[line break]10) Close Glove Bag[line break]11) Insert Hands into glove slots[line break]12) Verify no leakage[line break]13) Open BioCell Habitat, remove Multiwell BioCell, and close BioCell Habitat[line break]14)Verify no leakage of Mutiwell BioCell[line break]15) Remove hands from Glove bag[line break]16) Put on Nitrile Gloves[line break]17)Remove all items from Glove Bag[line break]18)Insert Multiwell onto Stage[line break]19)Lower shield over Multiwell BioCell[line break]20)Place dust cover over Microscope[line break]21)Stage Clean Up Kit near microscope[line break]22)Fold up Glove Bag[line break]22)Put Glove Bag back in MicroStowage[line break]23)Take off Nitrile Gloves"
+
+After asking robonaut about Heart Experiment Guide for the third time:
+	 say "'I'm sorry. I've listed those steps to you two times already. You should know what to do at this point."
+	
+Phase One ends when notifying POIC. 
+
+Chapter - Phase Two
+
+Phase Two is a scene. Phase Two begins when Phase One ends. 
+
+A rule for reaching inside the glove bag:
+	      if the person reaching is the player, allow access.
+	
+Instead of closing glove bag the first time:
+	 say "After closing the glove bag, you place hands into the glove bag slots and remove the Multiwell BioCell from the BioCell Habitat, making sure to close the BioCell Habitat afterwards.";
+	   
+Removing hands is an action applying to nothing. Understand "remove hands/remove hands from glove bag" as removing hands.
+
+Instead of removing hands:
+	 say "You remove your hands from the Glove Bag. Now you need to proceed with the rest of the steps in the Multiwell Biocell Inspection.".
+
+Waiting more is an action applying to one number. 
+
+Understand "wait [a time period]" or "wait for [a time period]" or "wait for a/an [a time period]" or "wait a/an [a time period]" as waiting more. 
+
+Carry out waiting more: 
+	let the target time be the time of day plus the time understood; 
+	decrease the target time by five minutes; 
+	while the time of day is not the target time: 
+		follow the turn sequence rules. 
+		
+After waiting for the fourth time:
+	say "Robonaut informs you that twenty minutes has now elasped. 'You are now free to proceed with the rest of the experiment' says Robonaut."
+		
+Report waiting more: 
+	say "It is now [time of day + 5 minutes]." 
+	
+Check opening Glove Bag the first time:
+	If Glove Bag not on workbench:
+		end the story saying "Sorry you lose" 
+		
+Check opening Glove Bag the first time:
+	If Dust Cover not on workbench:
+		end the story saying "Sorry you lose" instead
+		
+Check opening Glove Bag the first time:
+	If CleanUp Kit not on workbench:
+		end the story saying "Sorry you lose" instead
+		
+Check closing Glove Bag:
+	if BioCell Habitat not in Glove Bag:
+		end the story saying "Sorry you lose" instead
+		
+Check closing Glove Bag:
+	if CleanUp Kit not in Glove Bag:
+		end the story saying "Sorry you lose" instead
+		
+Check opening Glove Bag the third time:
+	if not wearing nitrile gloves:
+		end the story saying "Sorry you lose dude" instead
+		
+Checking Biocell Habitat for leakage is an action applying to nothing. Understand "Check BioCell Habitat for leakage" and "Check Biocell for leakage" and "Verify no Biocell leakage" as checking BioCell Habitat for Leakage. 
+
+Checking Multiwell Habitat for leakage is an action applying to nothing. Understand "Check Multiwell  Habitat for leakage" and "Check Multiwell for leakage" and "Check multiwell for leaks" as checking multiwell habitat for leakage. 
+
+Every turn when checking Biocell Habitat for leakage:
+	if a random chance of 9 in 10 succeeds, say "You examine the Biocell Habitat and find that there is no leakage.";
+	otherwise end the story saying "Sorry you lose dude."
+	
+Every turn when checking Multiwell Habitat for leakage:
+	if a random chance of 9 in 10 succeeds, say "You examine the Multiwell Habitat for leakage and find that there is no leakage.";
+	otherwise end the story saying "Sorry you lose."
+
+Phase Two ends when insert multiwell biocell onto stage. 
+
+Chapter - Phase Three
+
+Phase Three is a scene. Phase Three begins when Phase Two ends. 
+
+Insert Multiwell BioCell onto Stage is an action applying to nothing. Understand "insert multiwell biocell onto stage" and "insert multiwell onto stage" as insert multiwell biocell onto stage. 
+
+Instead of insert multiwell biocell onto stage:
+	 say "You first raise the shield covering the stage. Then you carefully insert the multiwell onto stage with the ports facing upward. You make sure to angle the back edge of the Multiwell BioCell into the stage first and then press down on the front edge to snap it into place.";
+	
+Lower microscope shield is an action applying to nothing. Understand "Lower microscope shield" and "lower shield" as lower microscope shield. 
+
+Instead of lower microscope shield:
+	say "Microscope shield lowered."
+
+Check closing Glove Bag:
+	if CleanUp Kit not in Glove Bag:
+		end the story saying "Sorry you lose" instead
+
+Chapter - Phase Four
+
+Phase Four is a scene. Phase four begins when Phase Three ends. 
+	
+Staging cleanup kit is an action applying to nothing. Understand "Stage cleanup kit near microscope" and "stage clean up kit near microscope" and "stage cleanup kit" and "stage clean up kit" as staging cleanup kit. 
+
+After staging cleanup kit:
+	say "You place the CleanUp kit near the microscope just in case there is any undedetected leakage that you will need to address.". 
+
+Fold up the glove bag is an action applying to nothing. Understand "fold up glove bag" and "fold up the glove bag" and "fold up glove bag" as fold up the glove bag. 
+
+Instead of fold up the glove bag:
+	say "Seeing that there were no leakages you fold up the glove bag and place it back into its bag for future use." 
+
+Instead of taking off nitrile gloves:
+	end the story saying "Good job". 	
+
+test me with "open lab manual/read Research Overview/read heart experiment guide/unlock SABL/open SABL/open SABL/take biocell/close sabl/notify POIC/wait/wait/wait/wait/open microstowage/put glove bag on workbench/put cleanup kit on workbench/ put dust cover on workbench/open glove bag/put BioCell Habitat in glove bag/put cleanup kit in glove bag/close glove bag/check BioCell habitat for leakage/put on nitrile gloves/open glove bag/i/open biocell/check multiwell for leakage/take multiwell/take cleanup kit/insert multiwell biocell onto stage/lower shield/cover microscope/stage cleanup kit/fold up glove bag/put biocell habitat in microstowage/take off gloves".
