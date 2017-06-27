@@ -14,13 +14,13 @@ Include Variable Time Control by Eric Eve.
 
 Include Vorple Multimedia by Juhana Leinonen.
 
-Release along with the "Vorple" interpreter.
-
 Include Vorple Notifications by Juhana Leinonen.
 
 Include Vorple Screen Effects by Juhana Leinonen.
 
 Include Vorple Modal Windows by Juhana Leinonen.
+
+Release along with the "Vorple" Interpreter. 
 
 Release along with source text. 
 
