@@ -259,49 +259,49 @@ Instead of Heying Robonaut:
 	say "Robonaut says: How may I be of assistance?".
 	
 After saying hello to Robonaut when the greeting type is explicit:
-	clear only main screen;
-	place an image "robonaut.jpg" with description "Hi, there, My name is Robonaut and I am here to help you to the best of my ability. Is there anything I can help you with?", centered; 
+	place an image "robonaut.jpg" with description "", centered; 
+	say "Hi, there, My name is Robonaut and I am here to help you to the best of my ability. Is there anything I can help you with?". 
 	
 After saying hello to Robonaut when the greeting type is implicit:
-	clear only main screen;
-	place an image "robonaut_salute.jpg" with description "'I am at your beck and call. Ask away.", centered; 
+	place an image "robonaut_salute.jpg" with description "", centered; 
+	say "'I am at your beck and call. Ask away". 
 
 Asking Robonaut about something is Robonaut-chatting.
 Telling Robonaut about something is Robonaut-chatting.
 
 After quizzing Robonaut about Robonaut the first time:
-	clear only main screen;
-	place an image "robonaut_salute.jpg" with description "How are you, Robonaut?' you ask.[paragraph break]'I'm fantastically well, I am certainly not fine by far, but you could say I'm close to spectacular.", centered; 
+	place an image "robonaut_salute.jpg" with description "", centered; 
+	say "How are you, Robonaut?' you ask.[paragraph break]'I'm fantastically well, I am certainly not fine by far, but you could say I'm close to spectacular";
 	decrease score by 1. 
 	
 After quizzing Robonaut about the Express Rack:
-	clear only the main screen;
-	place an image "express_rack.jpg" with description "Tell me all you know about the EXPRESS Rack' you ask.[paragraph break]'The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL).' Robonaut replies.", centered;
+	place an image "express_rack.jpg" with description "", centered;
+	say "Tell me all you know about the EXPRESS Rack' you ask.[paragraph break]'The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL) Robonaut replies..'";
 	decrease score by 1.
 	
 After quizzing Robonaut about the Lab Manual:
-	clear only main screen;
-	place an image "manual.jpg" with description "Tell me about the lab manual' you ask.[paragraph break]'The Lab Manual is your best friend today. Within the manual I have placed the Research Overview and and the Heart Experiment Guide.' Robonaut replies.", centered; 
+	place an image "manual.jpg" with description "", centered; 
+	say "Tell me about the lab manual' you ask.[paragraph break]'The Lab Manual is your best friend today. Within the manual I have placed the Research Overview and and the Heart Experiment Guide.' Robonaut replies.";
 	decrease score by 1.
 
 After quizzing Robonaut about the SABL:
 	decrease score by 1;
-	clear only the main screen;
-	place an image "manual.jpg" with description "Tell me about the SABL please' you ask.[paragraph break]'The SABL or Space Automated Bioproduct Lab is a part of the Express Rack.' Robonaut replies", centered. 
+	place an image "manual.jpg" with description "", centered;
+	say "Tell me about the SABL please' you ask.[paragraph break]'The SABL or Space Automated Bioproduct Lab is a part of the Express Rack.' Robonaut replies". 
 	
 After quizzing Robonaut about the Biocell Habitat:
 	decrease score by 1;
-	clear only the main screen; 
-	place an image "biocell_habitat.jpg" with description "Tell me about the Biocell' you ask.[paragraph break]'A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.' Robonaut replies", centered. 
+	place an image "biocell_habitat.jpg" with description "", centered;
+	say "Tell me about the Biocell' you ask.[paragraph break]'A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.' Robonaut replies.".
 	
 After quizzing Robonaut about the MicroStowage:
 	 say "'Robonaut what is in the MicroStowage' you ask.[paragraph break]'The MicroStowage contains the various apparatus that you will need to complete today's task.' Robonaut replies.";
 	decrease score by 1.
 
 After quizzing Robonaut about the Glove Bag:
-	 decrease score by 1;
-	clear only the main screen;
-	place an image "glove_bag.jpg" with description "Robonaut tell me about the Glove Bag.' you ask.[paragraph break]'This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag.' Robonaut replies.", centered. 
+	decrease score by 1;
+	place an image "glove_bag.jpg" with description "", centered;
+	say "Robonaut tell me about the Glove Bag.' you ask.[paragraph break]'This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag.' Robonaut replies". 
 	
 After quizzing Robonaut about the CleanUp Kit:
 	 say "'Robonaut tell me what I need to know about the CleanUp Kit.' you ask.[paragraph break]'The CleanUp Kit is used in cae of a leakage during the experiment.' Robonaut replies.";
@@ -309,8 +309,8 @@ After quizzing Robonaut about the CleanUp Kit:
 	
 After quizzing Robonaut about the Dust Cover:
 	decrease score by 1;
-	clear only the main screen;
-	place an image "dust_cover.jpg" with description "Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattende.' Robonaut replies.", centered. 
+	place an image "dust_cover.jpg" with description "", centered;
+	say "Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattended.' Robonaut replies."
 	
 After quizzing Robonaut about the Heart Experiment Guide:
 	 say "'Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattende.' Robonaut replies.";
@@ -331,13 +331,13 @@ Notifying POIC is an action applying to nothing. Understand "notify POIC" as not
 Check notifying POIC rule:
 	if the BioCell Habitat is not carried:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed.[paragraph break]Thanks for checking in, but it seems that you've skipped quite a few steps in this procedure. It's very important that you complete the procedure in the correct sequence. This shows us that you might not be the right person for this task. You've failed the mission and let us all down. SHAME!", centered;
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed.[paragraph break]Thanks for checking in, but it seems that you've skipped quite a few steps in this procedure. It's very important that you complete the procedure in the correct sequence. This shows us that you might not be the right person for this task. You've failed the mission and let us all down. SHAME!";
 		end the story instead;		
 	if the SABL is open:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed. [paragraph break] Because you forgot to close the SABL BEFORE contacting POIC, you unwittingly allow for particles to contaminate the remaining heart cells, ruining all the hard work done to set up this experiment. You had access to the step-by-step guide for this experiment and you still messed it up. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!", centered;
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed. [paragraph break] Because you forgot to close the SABL BEFORE contacting POIC, you unwittingly allow for particles to contaminate the remaining heart cells, ruining all the hard work done to set up this experiment. You had access to the step-by-step guide for this experiment and you still messed it up. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!";
 		end the story instead;	
 				
 Report notifying POIC the first time:
@@ -395,8 +395,8 @@ Check reading Heart Experiment Guide:
 Check opening SABL:
 	if Heart Experiment Guide is unread:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed.[paragraph break]How can you run an experiment and you haven't read the experiment guide? You have no idea what you're doing and you went ahead anyways. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!", centered;
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed.[paragraph break]How can you run an experiment and you haven't read the experiment guide? You have no idea what you're doing and you went ahead anyways. This shows us that you might not be the right person for our team. You've failed the mission and let us all down. SHAME!";
 		end the story instead;
 		
 Telling robonaut to set timer for 20 minutes is an action applying to nothing. Understand "tell robonaut to set timer for 20 minutes" as telling robonaut to set timer for 20 minutes.
@@ -458,43 +458,43 @@ Report waiting more:
 Check opening Glove Bag the first time:
 	If Glove Bag not on workbench:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed.[paragraph break] You read the experiment guide and you're still do things out of order. I'm not sure if you are the right person for our team. You've failed the mission and let us all down. SHAME!", centered;	
+		place an image "gameover.jpg"with the description "", centered;	
+		say "Experiment Failed.[paragraph break] You read the experiment guide and you're still do things out of order. I'm not sure if you are the right person for our team. You've failed the mission and let us all down. SHAME!";
 		end the story instead;
 		
 Check opening Glove Bag the first time:
 	If Dust Cover not on workbench:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed.[paragraph break]Sorry you lose. You don't have everything you need on the workbench before proceeding with the experiment. I'm not sure you're the right person for out team. You've failed the mission and let us all down. SHAME!", centered;
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed.[paragraph break]Sorry you lose. You don't have everything you need on the workbench before proceeding with the experiment. I'm not sure you're the right person for out team. You've failed the mission and let us all down. SHAME!";
 		end the story instead; 	
 		
 Check opening Glove Bag the first time:
 	If CleanUp Kit not on workbench:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed[paragraph break]Sorry you lose. You don't have everything you need on the workbench before proceeding with the experiment. I'm not sure you're the right person for our team. You've failed the mission and let us all down. SHAME", centered;	
-		end the story instead; 
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed[paragraph break]Sorry you lose. You don't have everything you need on the workbench before proceeding with the experiment. I'm not sure you're the right person for our team. You've failed the mission and let us all down. SHAME!";
+		end the story; 
 		
 Check closing Glove Bag:
 	if BioCell Habitat not in Glove Bag:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Sorry you lose. You don't have everything you need in the Glove Bag to conduct this experiment. You left the BioCell Habitat, which is probably the most important part of the experiment, outside of the Glove Bag. I'm not sure you're the right perosn for our team. You've failed hte mission and let us all down. SHAME!", centered;	
-		end the story instead.
+		place an image "gameover.jpg"with the description "", centered;
+		say "Sorry you lose. You don't have everything you need in the Glove Bag to conduct this experiment. You left the BioCell Habitat, which is probably the most important part of the experiment, outside of the Glove Bag. I'm not sure you're the right perosn for our team. You've failed hte mission and let us all down. SHAME!"; 	
+		end the story.
 		
 Check closing Glove Bag:
 	if CleanUp Kit not in Glove Bag:
 		decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg"with the description "Experiment Failed.[paragraph break]Sorry but you have failed this mission. You did not put everything you needed to inside the glove bag before closing it. That means you will have to reopen the glove bag which increases the liklihood of contamination. I'm not sure you're the right person for our team. SHAME", centered;	
-		end the story instead. 
+		place an image "gameover.jpg"with the description "", centered;
+		say "Experiment Failed.[paragraph break]Sorry but you have failed this mission. You did not put everything you needed to inside the glove bag before closing it. That means you will have to reopen the glove bag which increases the liklihood of contamination. I'm not sure you're the right person for our team. SHAME!"; 	
+		end the story. 
 		
 Check opening Glove Bag the third time:
 	if not wearing nitrile gloves:
 		 decrease score by score;
-		clear only the main screen;
-		place an image "gameover.jpg" with the description "Experiment Failed[line break]WHAT ARE YOU DOING![line break][line break] Why are you handling precious lab material without first putting on nitrile gloves. You've contaminated the heart cells and ruined a very expensive experiment. [paragraph break] I'm not sure you're the right person for our team. SHAME!", centered;	
+		place an image "gameover.jpg" with the description "", centered;
+		say "Experiment Failed[line break]WHAT ARE YOU DOING![line break][line break] Why are you handling precious lab material without first putting on nitrile gloves. You've contaminated the heart cells and ruined a very expensive experiment. [paragraph break] I'm not sure you're the right person for our team. SHAME!";	
 		end the story. 
 		
 Checking Biocell Habitat for leakage is an action applying to nothing. Understand "Check BioCell Habitat for leakage" and "Check Biocell for leakage" and "Verify no Biocell leakage" as checking BioCell Habitat for Leakage. 
@@ -502,15 +502,14 @@ Checking Biocell Habitat for leakage is an action applying to nothing. Understan
 Checking Multiwell Habitat for leakage is an action applying to nothing. Understand "Check Multiwell  Habitat for leakage" and "Check Multiwell for leakage" and "Check multiwell for leaks" as checking multiwell habitat for leakage. 
 
 Every turn when checking Biocell Habitat for leakage:
-	if a random chance of 9 in 10 succeeds, say "You examine the Biocell Habitat and find that there is no leakage.";
+	if a random chance of 9 in 10 succeeds, say "You examine the Biocell Habitat and find that there is no leakage."; 
 	otherwise increase score by 5;
-	clear only the main screen;
-		place an image "thumbsup.jpg"with the description "Experiment Failed[line break]You detect a leak in the BioCell Habitat and try to clean it up but to no avail. The experiment cannot be completed but you did your best. Hold your head up!", centered;	
-	end the story. 
-	
+	say "You discover there has been a leakage in the BioCell Habitat. You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment."; 	
+		
 Every turn when checking Multiwell Habitat for leakage:
 	if a random chance of 9 in 10 succeeds, say "You examine the Multiwell Habitat for leakage and find that there is no leakage.";
-	otherwise end the story saying "You detect a leak in the BioCell Habitat and try to clean it up but to no avail. The experiment cannot be completed but you did your best. Hold your head up!"; increase score by 5
+	otherwise increase score by 5;
+	say "You detect a leak in the BioCell  You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment."; 
 
 Phase Two ends when insert multiwell biocell onto stage. 
 
@@ -545,7 +544,6 @@ Instead of fold up the glove bag:
 Instead of taking off nitrile gloves:
 	increase score by 10;
 	end the story saying "Good job Astonaut. You've succesfully completed the Heart Cell Experiment and the data that you collect will be useful as we continue to see how long term exposure to microgravity effects the human body. [paragraph break] Once again good, NO, great job!";
-	clear only the main screen;
-		place an image "cheering.jpg"with the description "YOU DID IT!", centered;	
+	place an image "cheering.jpg"with the description "YOU DID IT!", centered;	
 		
 test me with "open lab manual/read Research Overview/read heart experiment guide/unlock SABL/open SABL/open SABL/take biocell/close sabl/notify POIC/wait/wait/wait/wait/open microstowage/put glove bag on workbench/put cleanup kit on workbench/ put dust cover on workbench/open glove bag/put BioCell Habitat in glove bag/put cleanup kit in glove bag/close glove bag/check BioCell habitat for leakage/put on nitrile gloves/open glove bag/i/open biocell/check multiwell for leakage/take multiwell/take cleanup kit/insert multiwell biocell onto stage/lower shield/cover microscope/stage cleanup kit/fold up glove bag/put biocell habitat in microstowage/take off gloves".
