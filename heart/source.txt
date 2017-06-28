@@ -124,8 +124,6 @@ Reading heart experiment guide is an action applying to nothing. Understand "Rea
 
 Chapter - Beginning the Story
 
-When play begins: say “You are about to enter the Destiny Module which is a laboratory aboard the International Space Station (ISS). Numerous racks and stowage compartments contain scientific experiments and equipment. [line break]"  
-
 When play begins: now the command prompt is "[time of day] ->"
 
 When play begins:
@@ -150,7 +148,7 @@ The US Module is a region. Destiny Module, Unity Module, Quest Airlock, and Harm
 
 Section 1 - Destiny Lab
 
-The Destiny Module is a nautical room. The description of the Destiny Module is "The doors to the Destiny Module close behind you as you enter. You quickly locate the EXPRESS Rack and with a slight push, you drift over over to begin today's tasks"
+The Destiny Module is a nautical room. The description of the Destiny Module is "You are about to enter the Destiny Module which is a laboratory aboard the International Space Station (ISS). Numerous racks and stowage compartments contain scientific experiments and equipment. [line break][line break] As the doors to the Destiny Module close behind you quickly locate the EXPRESS Rack and with a slight push drift over over to begin today's tasks"
 
 The workbench is a supporter in the Destiny Module. On top of the workbench is the lab manual and nitrile gloves. 
 
@@ -257,8 +255,8 @@ Every turn:
 Heying Robonaut is an action applying to nothing. Understand "Hey Robonaut" as Heying Robonaut.
 
 Instead of Heying Robonaut:
-	 clear only main screen;
 	place an image "robonaut_salute.jpg" with description "Robonaut says: How may I be of assistance?", centered; 
+	clear only main screen;
 
 After saying hello to Robonaut when the greeting type is explicit:
 	clear only main screen;
