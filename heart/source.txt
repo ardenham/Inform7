@@ -159,7 +159,7 @@ After opening lab manual when the lab manual is not handled:
 
 The Research Overview is a portable thing. The Research Overview can be read or unread. The Research Overview is unread. Understand "overview" as Research Overview. 
 
-The Heart Experiment Guide is a portable thing. The Heart Experiment Guide can be read or unread. The Heart Experiment Guide is unread. Understand "experiment guide/guide" as heart experiment guide. 
+The Heart Experiment Guide is a portable thing. The Heart Experiment Guide can be read or unread. The Heart Experiment Guide is unread. Understand "experiment guide" and "guide" as heart experiment guide. 
 
 Nitrile Gloves are a wearable thing.
  
@@ -381,7 +381,6 @@ Before unlocking the SABL the first time:
 	say "using the code '200916' you unlock the SABL". 
 
 Before opening Lab Manual the first time:
-	clear only the main screen; 
 	say "Opening the lab manual reveals two documents: The Research Overview and the Heart Experiment Guide.";
 	place an image "manual.jpg" with the description "", centered;
 	increase score by one.
