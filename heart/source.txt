@@ -255,7 +255,8 @@ Every turn:
 Heying Robonaut is an action applying to nothing. Understand "Hey Robonaut" as Heying Robonaut.
 
 Instead of Heying Robonaut:
-	place an image "robonaut_salute.jpg" with description "Robonaut says: How may I be of assistance?", centered; 
+	place an image "robonaut_salute.jpg" with description "", centered; 
+	say "Robonaut says: How may I be of assistance?".
 	
 After saying hello to Robonaut when the greeting type is explicit:
 	clear only main screen;
