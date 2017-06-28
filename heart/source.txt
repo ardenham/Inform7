@@ -171,20 +171,29 @@ Section 2 - EXPRESS Rack
 The Express Rack is scenery in the Destiny Module. The description of EXPRESS Rack is "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL). "
 
 Before examining the Express Rack:
-	say "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL).";
 	place an image "express_rack.jpg" with description "", centered. 
 
-The SABL is a locked, closed, openable container that is part of the Express Rack. The description of the SABL is "[if closed] You can open the SABL. [otherwise] You can see several tray compartments which have are closed. One of the compartments is labelled Biocell Habitat inside the SABL."  
+The SABL is a locked, closed, openable container that is part of the Express Rack. The description of the SABL is "[if closed] You can open the SABL. [otherwise] You can see several tray compartments which have are closed. One of the compartments is labelled Biocell Habitat inside the SABL."
+
+Before examining the SABL:
+	clear only the main screen;
+	place an image "sabl.jpg" with the description "", centered.   
  
 A Biocell Habitat is a closed openable container in the SABL.  
 
 Before examining the Biocell Habitat:
+	clear only the main screen;
 	say "A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.";
 	place an image "biocell_habitat.jpg" with the description "BioCell Habitat", centered. 
 
 The MicroStowage is a closed openable container that is scenery within the Destiny Module. "[if open] Within the MicroStowage you see a Microscope, a clear Glove Bag, a CleanUp Kit, and a Dust Cover. [otherwise] You see a storage compartment designated as MicroStowage."
  
-The Glove Bag is a thing. The Glove Bag is in the MicroStowage. It is  an openable, transparent container. It is closed.  The description of the Glove Bag is "This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag. [if closed] Currently, the Glove Bag is closed. [otherwise] Inside the Glove Bag you see.". 
+The Glove Bag is a thing. The Glove Bag is in the MicroStowage. It is  an openable, transparent container. It is closed.  The description of the Glove Bag is "This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag. [if closed] Currently, the Glove Bag is closed. [otherwise] Inside the Glove Bag you see."
+
+Before examining the Glove Bag:
+	clear only the main screen;
+	say "This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag. [if closed] Currently, the Glove Bag is closed. [otherwise] Inside the Glove Bag you see.";
+	place an image "glove_bag.jpg" with the description "", centered. 
 
 CleanUp Kit is a thing. The CleanUp Kit is in the MicroStowage. The description is "The CleanUp Kit is used in case of a leakage".  
 
@@ -257,42 +266,50 @@ Every turn:
 
 Heying Robonaut is an action applying to nothing. Understand "Hey Robonaut" as Heying Robonaut.
 
-Instead of Heying Robonaut:
+Before Heying Robonaut:
+	clear only the main screen; 
 	place an image "robonaut_salute.jpg" with description "", centered; 
 	say "Robonaut says: How may I be of assistance?".
 	
-After saying hello to Robonaut when the greeting type is explicit:
+Before saying hello to Robonaut when the greeting type is explicit:
+	clear only the main screen; 	
 	place an image "robonaut.jpg" with description "", centered; 
 	say "Hi, there, My name is Robonaut and I am here to help you to the best of my ability. Is there anything I can help you with?". 
 	
-After saying hello to Robonaut when the greeting type is implicit:
+Before saying hello to Robonaut when the greeting type is implicit:
+	clear only the main screen; 
 	place an image "robonaut_salute.jpg" with description "", centered; 
 	say "'I am at your beck and call. Ask away". 
 
 Asking Robonaut about something is Robonaut-chatting.
 Telling Robonaut about something is Robonaut-chatting.
 
-After quizzing Robonaut about Robonaut the first time:
+Before quizzing Robonaut about Robonaut the first time:
+	clear only the main screen; 
 	place an image "robonaut_salute.jpg" with description "", centered; 
 	say "How are you, Robonaut?' you ask.[paragraph break]'I'm fantastically well, I am certainly not fine by far, but you could say I'm close to spectacular";
 	decrease score by 1. 
 	
-After quizzing Robonaut about the Express Rack:
+Before quizzing Robonaut about the Express Rack:
+	clear only the main screen; 
 	place an image "express_rack.jpg" with description "", centered;
 	say "Tell me all you know about the EXPRESS Rack' you ask.[paragraph break]'The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL) Robonaut replies..'";
 	decrease score by 1.
 	
-After quizzing Robonaut about the Lab Manual:
+Before quizzing Robonaut about the Lab Manual:
+	clear only the main screen; 
 	place an image "manual.jpg" with description "", centered; 
 	say "Tell me about the lab manual' you ask.[paragraph break]'The Lab Manual is your best friend today. Within the manual I have placed the Research Overview and and the Heart Experiment Guide.' Robonaut replies.";
 	decrease score by 1.
 
-After quizzing Robonaut about the SABL:
+Before quizzing Robonaut about the SABL:
+	clear only the main screen; 
 	decrease score by 1;
 	place an image "manual.jpg" with description "", centered;
 	say "Tell me about the SABL please' you ask.[paragraph break]'The SABL or Space Automated Bioproduct Lab is a part of the Express Rack.' Robonaut replies". 
 	
-After quizzing Robonaut about the Biocell Habitat:
+Before quizzing Robonaut about the Biocell Habitat:
+	clear only the main screen; 
 	decrease score by 1;
 	place an image "biocell_habitat.jpg" with description "", centered;
 	say "Tell me about the Biocell' you ask.[paragraph break]'A Biocell Habitat contains multiple Multiwell Biocells. Each biocell contains samples of heart cells.' Robonaut replies.".
@@ -301,7 +318,8 @@ After quizzing Robonaut about the MicroStowage:
 	 say "'Robonaut what is in the MicroStowage' you ask.[paragraph break]'The MicroStowage contains the various apparatus that you will need to complete today's task.' Robonaut replies.";
 	decrease score by 1.
 
-After quizzing Robonaut about the Glove Bag:
+Before quizzing Robonaut about the Glove Bag:
+	clear only the main screen; 
 	decrease score by 1;
 	place an image "glove_bag.jpg" with description "", centered;
 	say "Robonaut tell me about the Glove Bag.' you ask.[paragraph break]'This Glove Bag is clear plastic with a Velcro zipper and built-in gloves so that you can manipulate an object in the bag.' Robonaut replies". 
@@ -310,7 +328,8 @@ After quizzing Robonaut about the CleanUp Kit:
 	 say "'Robonaut tell me what I need to know about the CleanUp Kit.' you ask.[paragraph break]'The CleanUp Kit is used in cae of a leakage during the experiment.' Robonaut replies.";
 	decrease score by 1.
 	
-After quizzing Robonaut about the Dust Cover:
+Before quizzing Robonaut about the Dust Cover:
+	clear only the main screen; 
 	decrease score by 1;
 	place an image "dust_cover.jpg" with description "", centered;
 	say "Robonaut what is the Dust Cover used for?.' you ask.[paragraph break]'This Dust Cover is used to provide a barrier if leakage occurs when the microscope is unattended.' Robonaut replies."
@@ -354,14 +373,17 @@ Phase One is a scene.  Phase One begins when play begins.
 
 Unlocking the SABL is an action applying to nothing. Understand "unlock SABL" as unlocking the SABL.
 
-Instead of unlocking the SABL the first time:
+Before unlocking the SABL the first time:
+	clear only the main screen; 
 	now the SABL is unlocked; 	
 	increase score by 2;
 	place an image "sabl.jpg" with the description "", centered;
 	say "using the code '200916' you unlock the SABL". 
 
-Instead of opening Lab Manual the first time:
+Before opening Lab Manual the first time:
+	clear only the main screen; 
 	say "Opening the lab manual reveals two documents: The Research Overview and the Heart Experiment Guide.";
+	place an image "manual.jpg" with the description "", centered;
 	increase score by one.
 
 Instead of opening SABL for the first time:
