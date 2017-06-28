@@ -380,11 +380,10 @@ Before unlocking the SABL the first time:
 	place an image "sabl.jpg" with the description "", centered;
 	say "using the code '200916' you unlock the SABL". 
 
-Before opening Lab Manual the first time:
+Instead of opening Lab Manual:
 	say "Opening the lab manual reveals two documents: The Research Overview and the Heart Experiment Guide.";
 	place an image "manual.jpg" with the description "", centered;
-	increase score by one.
-
+	
 Instead of opening SABL for the first time:
 	say "Robonaut activiates and says 'I'm not sure you're ready to open the SABL just yet. Have you briefed yourself on the lab procedures?' [line break]'If the answer is yes, then try opening the SABL again. If not then please go back to the lab manual and read'";
 	increase score by one. 
