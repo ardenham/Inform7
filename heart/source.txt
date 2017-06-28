@@ -453,6 +453,7 @@ A rule for reaching inside the glove bag:
 	
 Instead of closing glove bag the first time:
 	 say "After closing the glove bag, you place hands into the glove bag slots and remove the Multiwell BioCell from the BioCell Habitat, making sure to close the BioCell Habitat afterwards.";
+	place an image "dustcover_gloves.jpg" with description "", centered; 
 	increase score by 4. 
 	   
 Removing hands is an action applying to nothing. Understand "remove hands/remove hands from glove bag" as removing hands.
@@ -527,12 +528,11 @@ Checking Multiwell Habitat for leakage is an action applying to nothing. Underst
 Every turn when checking Biocell Habitat for leakage:
 	if a random chance of 9 in 10 succeeds, say "You examine the Biocell Habitat and find that there is no leakage."; 
 	otherwise increase score by 5;
-	say "You discover there has been a leakage in the BioCell Habitat. You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment."; 	
+	say "You discover there has been a leakage in the BioCell Habitat. You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment.".  	
 		
 Every turn when checking Multiwell Habitat for leakage:
 	if a random chance of 9 in 10 succeeds, say "You examine the Multiwell Habitat for leakage and find that there is no leakage.";
-	otherwise increase score by 5;
-	say "You detect a leak in the BioCell  You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment."; 
+	otherwise increase score by 5; say "You detect a leak in the BioCell  You clean the leakage using the Clean Up Kit and are now ready to continue with the experiment."; 
 
 Phase Two ends when insert multiwell biocell onto stage. 
 
@@ -543,7 +543,9 @@ Phase Three is a scene. Phase Three begins when Phase Two ends.
 Insert Multiwell BioCell onto Stage is an action applying to nothing. Understand "insert multiwell biocell onto stage" and "insert multiwell onto stage" as insert multiwell biocell onto stage. 
 
 Instead of insert multiwell biocell onto stage:
-	 say "You first raise the shield covering the stage. Then you carefully insert the multiwell onto stage with the ports facing upward. You make sure to angle the back edge of the Multiwell BioCell into the stage first and then press down on the front edge to snap it into place."; increase score by 4. 
+	 say "You first raise the shield covering the stage. Then you carefully insert the multiwell onto stage with the ports facing upward. You make sure to angle the back edge of the Multiwell BioCell into the stage first and then press down on the front edge to snap it into place."; 
+	place an image "insert_hands.jpg" with description "", centered;
+	increase score by 4. 
 	
 Lower microscope shield is an action applying to nothing. Understand "Lower microscope shield" and "lower shield" as lower microscope shield. 
 
