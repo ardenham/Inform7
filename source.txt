@@ -171,7 +171,6 @@ Section 2 - EXPRESS Rack
 The Express Rack is scenery in the Destiny Module. The description of EXPRESS Rack is "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL). "
 
 Before examining the Express Rack:
-	say "The EXpedite the PRoccessing of Experiments for Space Station (EXPRESS) racks contain multiple experiments. This particular EXPRESS Rack houses the Space Automated Bioproduct Lab (SABL).";
 	place an image "express_rack.jpg" with description "", centered. 
 
 The SABL is a locked, closed, openable container that is part of the Express Rack. The description of the SABL is "[if closed] You can open the SABL. [otherwise] You can see several tray compartments which have are closed. One of the compartments is labelled Biocell Habitat inside the SABL."  
@@ -357,8 +356,8 @@ Unlocking the SABL is an action applying to nothing. Understand "unlock SABL" as
 Instead of unlocking the SABL the first time:
 	now the SABL is unlocked; 	
 	increase score by 2;
-	clear only the main screen;
-	place an image "sabl.jpg" with the description "using the code '200916' you unlock the SABL", centered;
+	place an image "sabl.jpg" with the description "", centered;
+	say "using the code '200916' you unlock the SABL". 
 
 Instead of opening Lab Manual the first time:
 	say "Opening the lab manual reveals two documents: The Research Overview and the Heart Experiment Guide.";
