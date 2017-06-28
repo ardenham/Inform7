@@ -256,8 +256,7 @@ Heying Robonaut is an action applying to nothing. Understand "Hey Robonaut" as H
 
 Instead of Heying Robonaut:
 	place an image "robonaut_salute.jpg" with description "Robonaut says: How may I be of assistance?", centered; 
-	clear only main screen;
-
+	
 After saying hello to Robonaut when the greeting type is explicit:
 	clear only main screen;
 	place an image "robonaut.jpg" with description "Hi, there, My name is Robonaut and I am here to help you to the best of my ability. Is there anything I can help you with?", centered; 
