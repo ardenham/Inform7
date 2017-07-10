@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Anonymous - Four of a Kind — 6 of 6</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Anonymous" />
+  <meta name="description" content="A page for the game Four of a Kind by Anonymous." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+ </head>
+
+<body>
+
+<div class = "container">
+
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1"></a></span>
+</div>
+
+<div class ="sourceintroduction">
+	<h1>
+		<span>Four of a Kind</span> <span class="pagination">— 6 of 6</span>
+	</h1>
+	<h2>
+		<span>Anonymous</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 1</span>
+	</div>
+</div>
+
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_3.html">Previous</a></li>
+</ul>
+</div>
+
+<div class = "source">
+<p class="indent0"><span class="heading">Section 5 - Testing hand identification - Not for release</span></p><p class="indent0"><span class="comment">[For the sake of testing our rules, we provide an apparatus that will load the player's hand up with sample hands of each kind, then show the result to make sure that the hand is being correctly identified.]</span></p><p class="indent0">Understand &quot;<span class="quote">debug sorting</span>&quot; as debugging hand sorting. Debugging hand sorting is an action out of world.</p><p class="indent0">Carry out debugging hand sorting:</p><p class="indent1">test </p><p class="indent1">if sort-debugging is false, now sort-debugging is true;</p><p class="indent1">otherwise now sort-debugging is false.</p><p class="indent0">Report debugging hand sorting:</p><p class="indent1">say &quot;<span class="quote">Sort debugging is now [</span><span class="substitution">if sort-debugging is true</span><span class="quote">]on[</span><span class="substitution">otherwise</span><span class="quote">]off[</span><span class="substitution">end if</span><span class="quote">].</span>&quot;</p><p class="indent0">Test me with &quot;<span class="quote">draw / g / g / g / force hand / g / g / g / g / g / g / g / g / g / g / g / g</span>&quot;.</p><p class="indent0"><span class="comment">[The somewhat rough-and-ready principle of this table is that we will overwrite the cards in the player's hand by resetting their ranks and suits; every five rows of the table represent a new poker hand for the game to attempt to sort and identify. These include one example of each of the major kinds of poker hand, plus a couple of variations involving aces which test the special sorting rules.]</span></p><p class="indent0"><span class="heading">Table of Testing Hands</span></p><table><tr><td><span class="columnhead">set suit</span></td><td><span class="columnhead">set rank</span></td></tr>
+<tr><td>ones</td><td>1</td><td><span class="comment">[straight]</span></td></tr>
+<tr><td>ones</td><td>13</td></tr>
+<tr><td>ones</td><td>12</td></tr>
+<tr><td>ones</td><td>11</td></tr>
+<tr><td>halfs</td><td>14</td><td><span class="comment">[straight]</span></td></tr>
+<tr><td>halfs</td><td>21</td></tr>
+<tr><td>halfs</td><td>19</td></tr>
+<tr><td>halfs</td><td>26</td></tr>
+</table><p class="indent0">Understand &quot;<span class="quote">force hand</span>&quot; as forcing a hand. Forcing a hand is an action out of world.</p><p class="indent0">Current marker is a number that varies.</p><p class="indent0">Carry out forcing a hand:</p><p class="indent1">repeat with item running through cards which are carried by the player:</p><p class="indent2">increment current marker;</p><p class="indent2">if current marker is greater than the number of filled rows in the Table of Testing Hands, now current marker is 1;</p><p class="indent2">choose row current marker in the Table of Testing Hands;</p><p class="indent2">now the suit of item is the set suit entry;</p><p class="indent2">now the rank of item is the set rank entry.</p><p class="indent0">Report forcing a hand:</p><p class="indent1">try taking inventory.</p>
+</div>
+
+<div class ="notes">
+
+</div>
+
+</div>
+
+</body>
+
+</html>

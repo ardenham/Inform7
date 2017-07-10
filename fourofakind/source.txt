@@ -1,0 +1,257 @@
+"Four of a Kind"
+
+Release along with source text. 
+Release along with an introductory postcard.
+Release along with the introductory booklet.
+Release along with interpreter. 
+
+
+
+Section 1 - Cards
+
+Suit is a kind of value. The suits are ones, halfs, thirds, and fourths. Understand "one" as ones. Understand "half" as halfs. Understand "third" as thirds. Understand "fourth" as fourths. [Providing the singular forms means that Inform will also understand >EXAMINE SPADE, >DISCARD CLUB, and so on.]
+
+A card is a kind of thing.  A card has a suit. A card has a number called rank. Understand the suit property as describing a card. Understand the rank property as describing a card.
+
+52 cards are in the card repository.
+
+[Now, we're going to describe the higher numbers as face cards, so it helps to write a new "to say" phrase, just as we did in Jokers Wild. (A subsequent version of this example shows how to print card values with red and black symbols representing the different suits; see "Tilt 3".)]
+
+To say (count - a number) as a card value:
+	choose row count in the Table of Value Names;
+	say "[term entry]".
+
+Rule for printing the name of a card (called target):
+	say "[rank of the target as a card value]of[suit of the target]"
+
+Table of Value Names
+Value	Term	Topic
+1	"1:1"	"1 to 1/one to one"
+2	"2:2"	"2 to 2/two to two"
+3	"3:3"	"3 to 3/three to three"
+4	"4:4"	"4 to 4/four to four"
+5	"5:5"	"5 to 5/five to five"
+6	"6:6"	"6 to 6/six to six"
+7	"7:7"	"7 to 7/seven to seven"
+8	"8:8"	"8 to 8/eight to eight"
+9	"9:9"	"9 to 9/nine to nine"
+10	"10:10"	"10 to 10/ten to ten"
+11	"11:11"	"eleven to eleven/11 to 11"
+12	"12:12"	"12 to 12/twelve to twelve"
+13	"13:13"	"13 to 13/thirteen to thirteen"
+14	"1:2"	"1 to 2/one to two"
+15	"2:4"	"2 to 4/two to four"
+16	"3:6"	"3 to 6/three to six"
+17	"4:8"	"4 to 8/four to eight"
+18	"5:10"	"5 to 10/five to 10"
+19	"6:12"	"6 to 12/six to twelve"
+20	"7:14"	"7 to 14/seven to fourteen"
+21	"8:16"	"8 to 16/eight to sixteen"
+22	"9:18"	"9 to 18/nine to eighteen"
+23	"10:20"	"10 to 20/ten to twenty"
+24	"11:22"	"11 to 22/eleven to twenty two"
+25	"12:24"	"12 to 24/twelve to twenty four"
+26	"13:26"	"13 to 26/thirteen to twenty six"
+27	"1:3"	"one to three/1 to 3"
+28	"2:6"	"2 to 6/two to six"
+29	"3:9"	"3 to 9/three to nine"
+30	"4:12"	"4 to 12/four to twelve"
+31	"5:15"	"5 to 15/five to fifteen"
+32	"6:18"	"6 to 18/six to eighteen"
+33	"7:21"	"7 to 21/seven to twenty one"
+34	"8:24"	"8 to 24/eight to twenty four"
+35	"9:27"	"9 to 27/nine to twenty seven"
+36	"10:30"	"10 to 30/ten to thirty"
+37	"11:33"	"11 to 33/eleven to thirty three"
+38	"12:36"	"12 to 36/twelve to thirty six"
+39	"13:39"	"13 to 39/thirteen to thirty nine"
+40	"1:4"	"1 to 4/one to four"
+41	"2:8"	"2 to 8/two to eight"
+42	"3:12"	"3 to 12/three to twelve"
+43	"4:16"	"4 to 16/four to sixteen"
+44	"5:20"	"5 to 20/five to twenty"
+45	"6:24"	"6 to 24/six to twenty four"
+46	"7:28"	"7 to 28/seven to twenty eight"
+47	"8:32"	"8 to 32/eight to thirty two"
+48	"9:36"	"9 to 36/nine to thirty six"
+49	"10:40"	"10 to 40/ten to fourty"
+50	"11:44"	"11 to 44/eleven to fourty four"
+51	"12:48"	"12 to 48/twelve to fourty eight"
+52	"13:52"	"13 to 52/thirteen to 52"
+
+
+[Now to set up the deck at the outset. With some intelligent looping, we avoid having to declare every combination of suit and number individually:]
+
+When play begins:
+	reconstitute deck.
+
+To reconstitute deck:
+	let current suit be thirds;
+	now every card is in the card repository;
+	while a card is in the card repository:
+		repeat with current rank running from 1 to 52:
+			let item be a random card in card repository;
+			now rank of item is current rank;
+			now suit of item is current suit;
+			now item is in the deck of cards;
+		now current suit is the suit after the current suit.
+
+[And now we need a simple setting and some actions to manipulate the deck with:]
+
+Section 2 - The Deck and the Discard Pile
+
+The MathLab is a room. "Nothing to see here."
+
+The game instructions is a fixed in place thing in MathLab. The game instructions can be read or unread. The game instructions are unread. The description of the game instructions is "Reading the game instructions will tell you all that you need to know to play this game."
+
+Reading game instructions is an action applying to nothing. Understand "Read game instructions" and "read instructions" as Reading game instructions. 
+
+Instead of reading game instructions:
+	say "The name of the game is Four of a Kind. The goal of the game is for you to have four cards in your hand that are all equal to each other. Here's how you play:[line break][line break]* Open the deck of cards and take four cards from the top of the deck.[line break] *After examining your hand decide which cards you want to keep and which ones you want to discard.[line break]* Place the cards you don't want in the discard container.[line break]* For every card you discard, take another from the deck of cards.[line break]* Remember you can always check the cards in your hand by typing 'i'[line break]*Once you feel you have four of a kind, place them on the playing table.[line break]* Make sure that you have four of a kind because is you put them on the table and you don't have four of a kind then you will lose![line break]* Make as many four of a kinds as you can until the time runs out.[paragraph break] To pick up a card type 'draw/draw a card/'. To put down a card type 'discard a card/discard 'name of card'. Discarded cards go into the discard container and you cannot use them again. "
+	
+The deck of cards is in the Empty Room. It is a closed unopenable container. The description is "A standard deck of cards replaced with ratio cards.[paragraph break] To see what cards you're carrying at any moment type 'i'."
+
+The discard pile is a closed unopenable container. The description is "Cards in this game are discarded face-down, so the discard pile is not very interesting to see. All you can observe is that it currently contains [if the number of cards which are in the discard pile is less than ten][the number of cards which are in the discard pile in words][otherwise]about [the rounded number of cards which are in the discard pile in words][end if] card[s]."
+
+To decide what number is the rounded number of (described set - a description of objects):
+	let N be the number of members of the described set;
+	let R be N divided by 5;
+	let total be R times 5;
+	decide on total.
+
+[The above phrase rounds a number to the nearest five, so that the player is not autistically able to count a large number of cards in the discard pile at a single glance.]
+
+[This next bit is an optional borrowing from the Activities chapter: we want to prevent Inform printing things like "You can see a discard pile (closed) here.", since we don't want the player to think of the piles as containers, even though Inform thinks of them in those terms.]
+
+Rule for printing room description details of something: do nothing instead.
+
+[Finally, we want the player to use "draw" and "discard" to manipulate his hand of cards:]
+
+Section 3 - Drawing and Discarding Actions
+
+Understand the commands "take" and "carry" and "hold" and "get" and "drop" and "throw" and "discard" as something new.
+
+Understand "take [text]" or "get [text]" or "drop [text]" as a mistake ("Here, you only draw and discard. Nothing else matters at the moment.").
+
+Understand "draw" or "draw card" or "draw a card" as drawing. Drawing is an action applying to nothing. The drawing action has an object called the card drawn.
+Setting action variables for drawing:
+	now the card drawn is a random card which is in the deck of cards.
+
+Check drawing:
+	if the card drawn is nothing, say "The deck is completely depleted. Restart the game." instead.
+
+Check drawing:
+	if the number of cards carried by the player is greater than three,
+		say "This is a four-card game; you must discard something before drawing anything further." instead.
+
+Carry out drawing:
+	move the card drawn to the player.
+
+Report drawing:
+	say "You draw [a card drawn]."
+
+Understand "discard [card]" as discarding. Discarding is an action applying to one thing.
+
+Check discarding:
+	if the player does not carry the noun, say "You can only discard cards from your own hand." instead.
+
+Carry out discarding:
+	now the noun is in the discard pile;
+	if the discard pile is not visible, move the discard pile to the location.
+
+Report discarding:
+	say "You toss [the noun] nonchalantly onto the discard pile."
+
+Seeding is an action out of world. Understand "seed" as seeding. Carry out seeding: seed the random-number generator with 5681.
+
+
+Section 4 - Assessing Hands
+
+Before listing contents while taking inventory: group cards together.
+
+Before grouping together cards:
+	if the number of cards carried by the player is 4:
+		say "[run paragraph on]";
+		follow the hand-ranking rules;
+		if the rule succeeded, say "[the outcome of the rulebook]";
+		otherwise say "some random cards";
+		if the outcome of the rulebook is pair outcome, say " of [rank of the first thing held by the player as a card value]s";
+	otherwise:
+		say "[number of cards carried by the player in words] assorted cards";
+	say " (".
+
+Rule for grouping together cards:
+	say "[list hand]".
+
+To say list hand:
+	let chosen card be the first thing held by the player;
+	while chosen card is a card:
+		say "[chosen card]";
+		now chosen card is the next thing held after chosen card;
+		if chosen card is a card, say ", ".
+
+After grouping together cards:
+	say ")".
+
+[The ranking of poker hands traditionally depends on three features: 1) whether all the cards are of the same suit (flush); 2) whether the cards constitute a numerical run of ranks (straight); and 3) how many cards or sets of cards are of matching rank (pairs, three of a kind, and four of a kind). Here we will start by assessing our hand to determine these qualities:]
+
+The hand-ranking rules is a rulebook. The hand-ranking rules have outcomes royal flush, straight flush, four of a kind, full house, flush, straight, three of a kind, two pairs, pair, high card.
+
+The hand-ranking rulebook has a truth state called the flushness.
+
+[Next up, a check to see whether the player has a flush:]
+
+A hand-ranking rule (this is the finding flushness rule):
+	let called suit be the suit of a random card carried by the player;
+	if every card carried by the player is called suit, now flushness is true.
+	
+Sort-debugging is a truth state that varies.
+
+Section 5 - Testing hand identification - Not for release
+
+[For the sake of testing our rules, we provide an apparatus that will load the player's hand up with sample hands of each kind, then show the result to make sure that the hand is being correctly identified.]
+
+Understand "debug sorting" as debugging hand sorting. Debugging hand sorting is an action out of world.
+
+Carry out debugging hand sorting:
+	test 
+	if sort-debugging is false, now sort-debugging is true;
+	otherwise now sort-debugging is false.
+
+Report debugging hand sorting:
+	say "Sort debugging is now [if sort-debugging is true]on[otherwise]off[end if]."
+
+Test me with "draw / g / g / g / force hand / g / g / g / g / g / g / g / g / g / g / g / g".
+
+[The somewhat rough-and-ready principle of this table is that we will overwrite the cards in the player's hand by resetting their ranks and suits; every five rows of the table represent a new poker hand for the game to attempt to sort and identify. These include one example of each of the major kinds of poker hand, plus a couple of variations involving aces which test the special sorting rules.]
+
+Table of Testing Hands
+set suit	set rank
+ones	1	[straight]
+ones	13
+ones	12
+ones	11
+halfs	14	[straight]
+halfs	21
+halfs	19
+halfs	26
+
+
+Understand "force hand" as forcing a hand. Forcing a hand is an action out of world.
+
+Current marker is a number that varies.
+
+Carry out forcing a hand:
+	repeat with item running through cards which are carried by the player:
+		increment current marker;
+		if current marker is greater than the number of filled rows in the Table of Testing Hands, now current marker is 1;
+		choose row current marker in the Table of Testing Hands;
+		now the suit of item is the set suit entry;
+		now the rank of item is the set rank entry.
+
+Report forcing a hand:
+	try taking inventory.
+
+
+
+
