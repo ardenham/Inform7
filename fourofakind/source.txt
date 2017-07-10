@@ -22,7 +22,7 @@ To say (count - a number) as a card value:
 	say "[term entry]".
 
 Rule for printing the name of a card (called target):
-	say "[rank of the target as a card value]of[suit of the target]"
+	say "[rank of the target as a card value]"
 
 Table of Value Names
 Value	Term	Topic
