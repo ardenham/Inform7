@@ -1,0 +1,77 @@
+"Formula1" by Andre Denham
+
+Release along with an interpreter. 
+Release along with the source text. 
+Release along with the library card.
+Release along with the introductory booklet.
+Release along with the introductory postcard.
+
+A length is a kind of value. 6 in specifies a length. 
+
+An area is a kind of value. 10 sq in specifies an area. 
+
+A volume is a kind of value. 10 cu in specifies a volume. 
+
+A length times a length specifies an area. 
+
+A length times an area specifies a volume. 
+
+A thing has a length called a height. 
+A thing has length called width. 
+A thing has a length called depth. 
+A thing has a length called base. 
+The height of a thing is usually 10 in. 
+The width of a thing is usually 10 in. 
+The depth of a thing is usually 10 in. 
+
+Measuring is an action applying to nothing. Understand "measure" as measuring.
+
+ A measured container is a kind of container. A measured container has a length called height. A measured container has a length called width. A measured container has a length called depth. 
+
+A measured cylindrical container is a kind of container. A measured cylindrical container has a length called base. A measured cylindrical container has a length called height. 
+
+A measured cone container is a kind of container. A measured cone container has a length called base.  A measured cone container has a length called height.
+
+A measured sphere container is a kind of container. A measured sphere container has a length called radius. 
+
+Instead of examining a measured container:
+	say "The [noun] is [height of noun] by [width of noun] by [depth of noun]. Therefore the volume of the [noun] is [width of noun multiplied by height of noun multiplied by depth of noun]."
+	
+Instead of examining a measured cylindrical container:
+	say "The [noun] has a base of [base of noun] and a height of [height of noun]. Therefore the volume of the [noun] is [base of noun multiplied by height of noun]."
+	
+Instead of examining a measured cone container:
+	say "The [noun] has a base of [base of noun] and a height of [height of noun]. Therefore the volume of the [noun] is [(base of noun multiplied by height of noun) divided by 3]."
+
+Instead of examining a measured sphere container:
+	say "The [noun] has a radius of [radius of noun]. Therefore the volume of the [noun] is [(4 * pi * radius * radius * radius) divided by 3]."
+	
+The Measurement Lab is a room. "The Measurement Lab is a room in where we measure things. We can measure things one way in the measurement room: Volume." 
+
+The workbench is a supporter in the measurement lab. 
+
+A red box is a closed measured container on the workbench. The height is 12 in. The width is 8 in. The depth is 4 in.  
+
+A white box is a closed measured container on the workbench. The height is 4 in. The width is 12 in. The depth is 2 in.  
+
+A blue box is a closed measured container on the workbench. The height is 9 in. The width is 7 in. The depth is 5 in.  
+
+A red can is a closed measured cylindrical container on the workbench. The base is 9 in. The height is 10 in. 
+
+A white can is a closed measured cylindrical container on the workbench. The base is 9 in. The height is 10 in. 
+
+A blue can is a closed measured cylindrical container on the workbench. The base is 9 in. The height is 10 in. 
+
+A red cone is a closed measured cone container on the workbench. The base is 4 in. The height is 2 in. 
+
+A blue cone is a closed measured cone container on the workbench. The base is 3 in. The height is 9 in. 
+
+A white cone is a closed measured cone container on the workbench. The base is 14 in. The height is 5 in. 
+
+A red sphere is a closed measured sphere container on the workbench. The radius is 3 in. 
+
+A white sphere is a closed measured sphere container on the workbench. The radius is 4 in. 
+
+A blue sphere is a closed measured sphere container on the workbench. The radius is 5 in. 
+
+Test me with "x red box / x white can / x blue can / x blue cone / x white sphere ". 
