@@ -8,7 +8,7 @@ Release along with the introductory postcard.
 
 MathLab is a room.
 
-The blackboard is in MathLab. "A blackboard propped against one wall reads:[line break][line break]The formula for the area of a circle is A = pi * r^2.[line break][line break]Examine each circle to find its dimensions.[paragraph break]Use the information provided to find the area and circumference of each circle by rounding each number to a whole number.[paragraph break]Then set the combination of the safe in the following order to open it: Red area, Red Circumference, White area, White Circumference, Blue Area, Blue Circumference."
+The blackboard is in MathLab. "A blackboard propped against one wall reads:[line break][line break]The formula for the area of a circle is A = pi * r^2.[line break][line break]The formula for the circumference of a circle is 2 * pi * r or pi * d.[line break][line break]Examine each circle to find its dimensions.[paragraph break]Use the information provided to find the area and circumference of each circle by rounding each number to a whole number.[paragraph break]Then set the combination of the safe in the following order to open it: Red area, Red Circumference, White area, White Circumference, Blue Area, Blue Circumference."
 
 A workbench is a supporter in MathLab. 
 
