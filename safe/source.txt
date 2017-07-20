@@ -1,0 +1,66 @@
+"Formula2" by Andre Denham
+
+Release along with an interpreter. 
+Release along with the source text. 
+Release along with the library card.
+Release along with the introductory booklet.
+Release along with the introductory postcard.
+
+MathLab is a room.
+
+The blackboard is in MathLab. "A blackboard propped against one wall reads:[line break][line break]The formula for the area of a circle is A = pi * r^2.[line break][line break]Examine each circle to find its dimensions.[paragraph break]Use the information provided to find the area and circumference of each circle by rounding each number to a whole number.[paragraph break]Then set the combination of the safe in the following order to open it: Red area, Red Circumference, White area, White Circumference, Blue Area, Blue Circumference."
+
+A workbench is a supporter in MathLab. 
+
+A safe is on the workbench. The safe is a closed lockable locked container. A key is inside the safe. 
+
+The safe has a list of numbers called the current combination. 
+
+The safe has a list of numbers called the true combination. The true combination of the safe is {28, 19, 154, 44, 79, 31}.
+
+Understand "set [something] to [a number]" as setting it numerically to. Setting it numerically to is an action applying to one thing and one number.
+
+Instead of examining the safe:
+	if the number of entries in the current combination of the safe is 0,
+		say "You haven't dialed the safe to any combination yet.";
+	otherwise say "You have dialed the safe to [the current combination of the safe].".
+
+Check setting something numerically to (this is the block setting numerically rule):
+	say "[The noun] cannot be set."
+	
+Instead of setting the safe numerically to the number understood:
+	truncate the current combination of the safe to the last 5 entries;
+	add the number understood to the current combination of the safe;
+	if the safe is locked and the current combination of the safe is the true combination of the safe:
+		say "You dial [the number understood], and [the safe] gives a joyous CLICK.";
+		now the safe is unlocked;
+	otherwise if safe is unlocked and the safe is closed and the current combination of the safe is not the true combination of the safe:
+		say "You spin the dial, and [the safe] snicks locked.";
+		now the safe is locked;
+	otherwise:
+		say "You dial [the number understood] on the safe."
+
+A length is a kind of value. 6 in specifies a length.
+
+An area is a kind of value. 6 sq in specifies an area. 
+
+A thing has a length called a radius. 
+
+A thing has a length called diameter. 
+
+Measuring radius is an action applying to one thing. Understand "find r" as measuring radius. 
+
+Measuring diameter is an action applying to nothing. Understand "measure diameter/find diameter/find d/measure d" as measuring radius. 
+
+A measured circle is a kind of thing. A measured circle has a length called a radius. A measured circle has a length called a diameter. 
+
+A red circle is a measured circle in Mathlab. The radius is 3 in.   
+
+A white circle is a measured circle in Mathlab. The radius is 7 in. 
+
+A blue circle is a a measured circle in Mathlab. The radius is 5 in. 
+
+Instead of examining a measured circle:
+	say "The radius of the [noun] is [radius of noun].[paragraph break]That means the diameter of the [noun] is [two times radius of noun]". 
+	
+Test me with "x safe / set safe to 10 / x safe / set safe to 29 / x safe / set safe to 2 / x safe / set safe to 28 / x safe / set safe to 19 / set safe to 154/ set safe to 44 / set safe to 79 / set safe to 31 / x safe / open safe / set safe to 14 / close safe  / open safe".
