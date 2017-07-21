@@ -1,0 +1,95 @@
+"Formula3" by Andre Denham
+
+Release along with an interpreter. 
+Release along with the source text. 
+Release along with the library card.
+Release along with the introductory booklet.
+Release along with the introductory postcard.
+
+MathLab is a room. "MathLab is a room where you can simulate a variety of tasks in order to solve word problems and riddles. Check the blackboard for today's activity. "
+
+The blackboard is in MathLab. "The blackboard contains the following instructions:[line break]Roll the pair of die that are on the workbench and use your notebook to record the sum of two die. Roll the pair of dice at least 15 times. [paragraph break]"
+
+A workbench is a supporter in MathLab. 
+
+The pair of dice is on the workbench.
+
+The pair of dice has a number called first die. The pair of dice has a number called second die. The first die of the pair is 6. The second die of the pair is 6. Rule for printing the name of the pair of dice while taking inventory: say "pair of dice".
+Rule for printing the name of the pair of dice: say "pair of dice showing [first die of the pair plus second die of the pair]".
+
+To say detailed state of the dice:
+	if the first die of the pair is the second die of the pair, say "double [first die of the pair]";
+	otherwise say "[first die of the pair] and [second die of the pair]".
+
+The description of the pair of dice is "The pair of dice are [if the dice are carried]itching to be rolled[otherwise]showing [detailed state of the dice][end if]."
+
+Rolling is an action applying to one carried thing. Understand "roll [something preferably held]" as rolling.
+
+Check rolling when the noun is not the pair of dice: say "Not something you can roll." instead.
+Carry out rolling:
+	now the pair of dice is in the holder of the actor;
+	now the first die of the pair of dice is a random number from 1 to 6;
+	now the second die of the pair of dice is a random number from 1 to 6.
+Report rolling:
+	say "You roll [detailed state of the dice]."
+
+Test me with "i / roll dice / look / x dice / get dice / x dice / roll dice / roll dice / roll dice / roll dice / roll dice / roll dice / roll dice".
+
+The doubles count is a number that varies.
+After rolling:
+	if the first die of the pair is the second die of the pair, increment the doubles count;
+	otherwise now the doubles count is 0;
+	continue the action.
+
+A  notepad is a kind of thing. A notepad has an external file called the text file. A notepad can be fresh or used. A notepad is usually fresh. A notepad has a text called the heading.
+
+The currently erased notepad is an object that varies.
+To erase (pad - a notepad):
+	now the currently erased notepad is the pad;
+	write "[heading of the currently erased notepad][paragraph break]" to the text file of the pad;
+	now the pad is fresh.
+
+To write in (pad - a notepad):
+	append "[the time of day]: [topic understood][line break]" to the text file of the pad;
+	now the pad is used.
+
+To read (pad - a notepad):
+	say "You read: [paragraph break][text of the text file of the pad]".
+
+When play begins:
+	repeat with pad running through notepad:
+		erase the pad.
+
+Instead of examining a used notepad (called the pad):
+	read the pad.
+
+Instead of examining a fresh notepad (called the pad):
+	say "There is nothing of note in [the pad]."
+
+Understand "write [text] in [something preferably held]" as writing it in. Understand "write [text]" as writing it in. Writing it in is an action applying to a topic and one thing. Rule for supplying a missing second noun while writing: if a notepad (called the pad) is carried, now the second noun is the pad; otherwise say "You will have to specify what to write that it."
+
+Check writing it in:
+	if the second noun is not a notepad, say "It would be better to write in a notepad." instead.
+
+Carry out writing it in:
+	write in the second noun.
+
+Report writing it in:
+	say "Under the current time, you write '[the topic understood]' into [the second noun]."
+
+Understand "erase [something preferably held]" as erasing. Erasing is an action applying to one carried thing.
+
+Check erasing:
+	if the noun is not a notepad, say "It's hard to see how." instead.
+
+Carry out erasing:
+	erase the noun.
+
+Report erasing:
+	say "You scrub out all the entries in [the noun]."
+
+The player carries a notepad called your notebook. The file of Player's Observations is called "notebook". The text file of your notebook is the file of Player's Observations. The heading of your notebook is "Observations from Dice Rolls".
+
+Instead of examining your notebook when your notebook is fresh:
+	say "Your notebook is blank. Back in the office, of course, there are a stack of others. But you brought a fresh notebook in a kind of weary hope. You're going to pretend, just for now, that this body might be unrelated to the graphic string of murders you're already investigating."
+
